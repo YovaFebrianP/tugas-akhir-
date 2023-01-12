@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="teras coffee adalah coffee shop"name="description"/>
+    <meta content="kopi,kafe,minuman" name="keywords" />
+    <meta content="yovafebrian" name="author" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teras Coffee</title>
+    <link rel="stylesheet" href="coffeelist.html">
+    <link rel="icon" href="img/drink.png" color="white" type="image/drink type">
+    <link rel="stylesheet" href="img/coffeeico.ico" rel="icon" />
+    <link rel="stylesheet" href="main.js">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <header>
+        <a href="#" class="logo"><img src="img/coffeelogo.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coffeelist.html">CoffeeList</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
+            <li><a href="app.html">App</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </header>
+
+    <!--home-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Welcome to</span>
+            <h1>Teras Coffee</h1>
+            <h2>Come drink <br>with us </h2>
+            <a href="#" class="btn">Join Now</a>
+        </div>
+        <div class="home-img">
+            <img src="img/home-img.png" alt="">
+        </div>
+    </section>
+     <section class="footer" id="footer">
+        <div class="social" >
+             <center>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/yovafebrian30/?next=%2F"><i class='bx bxl-instagram'></i></a>
+                <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://twitter.com/?lang=en-id"><i class='bx bxl-twitter'></i></a>
+             </center>
+        </div>
+        <div class="links"> 
+            <center>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Our Company</a>
+            </center>
+        </div>
+        <p>&#169; teras coffee.</p>
+    </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<!--link to js-->
+<script src="main.js">
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () => {
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+    }
+    window.onscroll = () => {
+        menu.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    }
+</script>
+
+</html>
